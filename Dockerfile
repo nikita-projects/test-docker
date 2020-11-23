@@ -1,5 +1,5 @@
 FROM maven:3-openjdk-11
-RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello && \
+RUN git clone --single-branch --branch final-work https://github.com/nikita-projects/boxfuse-sample-java-war-hello && \
     mvn -f boxfuse-sample-java-war-hello/pom.xml package
 
 FROM tomcat:8
